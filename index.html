@@ -1,69 +1,301 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- link the html and css file to a path -->
-  <link href="style.css" rel="stylesheet">
-  <ul>
-  <li><a>Home</a></li>
-  <li><a>About</a>
-      <ul>
-        <li><a>our team</a></li>
-        <li><a>Camp Sites</a></li>
-        <li><a>Mission &amp; vission</a></li>
-        <li><a>Resources</a></li>
-     </ul>
-   </li>
-  <li><a>Things to do</a>
-    <ul>
-      <li><a>oActivities</a></li>
-      <li><a>Parks</a></li>
-      <li><a>Shorps</a></li>
-      <li><a>Events</a></li>
-    </ul>
-  </li>
-  <li><a>Contact</a>
-    <ul>
-    <li><a>Map</a></li>
-    <li><a>Direction</a></li>
-  </ul>
-</li>
-<li><a>Map</a></li>
-  <style>
-   <link rel="stylesheet" type="text/css" href="rootfolder.css">
-
-</style>
-
-  <meta charset="utf-8">
-  </head>
-    <center>
   <body>
-    <div id="main">
+    <html lang="en">
+ <!----->
+        <title>look for the futur</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-    <h1 id="titre">TAMARA DE LEMPICKA </h1>
-    <div id="img-div">
-  <!--organize the picture-->
-        <div class="row">
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-        <img src="images/image-1534787000.jpg" alt="Tamara de Lempicka" id= "image" >
-        <img src="images/tamara standing.jpg" alt="Tamara de Lempicka BnW" id= "image">
-        <div class="column">
-        <img src="images/images.jpg" alt="Tamara de Lempicka BnW" id= "image">
-       <img src="images/2163.jpg" alt="Tamara de Lempicka BnW" id= "image">
-       <img src="images/unnamed.jpg" alt="Tamara de Lempicka painting" id= "image">
-       </center>
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
 
-      <div>
-        <center>
-      <h3 id="img-caption"><em>One of the very rare Polish-Russian, French, American Painter(1898 –1980).</em></h3>
-    <div id="tribute-info">
-        <p>Tamara de Lempicka was the lone traditional easel painter in the entirety of the Art Deco style.Her sources of inspiration ranged dramatically: she adored Italian Renaissance painting; she was characterized by critics as a sort of modern-day Ingres, although the comparisons were more often not intended to flatter; she absorbed the avant garde art of the era - particularly post-cubist abstraction but of a "softened" style.</p>
-        <p> Perhaps most influential was Lempicka's desire to capitalize on her social connections to create a niche for her portraiture, which most often featured well-to-do, cosmopolitan types. The Art Deco style, lavish in a less visually complex way than its predecessor, Art Nouveau, was probably the ideal vehicle for her trendy style. Most notably, despite its decorative quality, her work provided her with an outlet for unconventional self-expression: truly a product of her era, the libertine golden age between the two world wars, Lempicka, a bisexual, made bold, liberated female sexuality the linchpin of her art.</p>
-        <p> Trained by two successful avant garde artists at the height of post-Cubist experimentation, Lempicka's work is nevertheless most often categorized as Art Deco. While her style incorporates the geometric, faceted forms of Cubism, her emphasis on soft modeling achieved a more sensuous effect. The bodies of her sitters are slightly distorted so that they appear as elegant objets d'art as much as human figures. She incorporated the rich, limited palette of Art Deco - particularly, graphic design - to create polished portraits that seemed more decorative than serious high art.</p>
-        <p>Lempicka's lifestyle, one in which she flouted her sexual freedom, has made her something of a conundrum for feminist art historians. As she frequently depicted her female lovers and other women - often in pairs or groups - as reveling in their sexuality under the gaze of a female painter, it is possible to regard Lempicka as a kind of proto-feminism. Indeed, as a female painter representing the female nude, she subverted the conventional arrangement in which a naked woman is displayed exclusively for the viewing pleasure of the male onlooker. The result is a kind of egalitarian voyeurism. The caveat may be, however, that as a member of the upper class, Lempicka's freedom was more easily attained and forgiven.</p>
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">CODING</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="https://html.com/" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+   
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="https://html.com/" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT MY WORK</h3>
+  <p class="w3-center w3-large">Key features of our Code</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+ 
+
+       <!----->
+
+
+        <head>
+            <meta charset="utf-8">
+            <!--creat the nav-->
+        <nav>
+          <a href="https://www.javascript.com/">Javascript</a> |
+          <a href="https://www.circuitbasics.com/how-to-write-and-run-a-python-program-on-the-raspberry-pi/">Rasberry Pi</a> |
+          <a href="https://www.geeksforgeeks.org/java-programming-basics/">Java</a> |
+          <a href="https://www.tutorialspoint.com/mysql/mysql-introduction.htm">MySQL</a>
+        </nav>
+        <style>
+            body {
+              background-image: url('https://wallpaperaccess.com/full/1347419.jpg');
+                }
+          </style>
+          
+      <head>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <center><titre>Some Quote to make you more strange to beleive on your capacity because nothing is impossible  </titre>
+    <p><strong>Note:</strong> to become a Web developer is<strong>very hard </strong> and no matter how hard it's never forget your goals</p></center>
+ 
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          beleive
+        </a>
       </div>
-      <a href="https://en.wikipedia.org/wiki/Tamara_de_Lempicka" target ="_blank" id="tribute-link">
-        learn more about Tamara De Lempicka
-        </center>
-        </body>
-  </html>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <img src="https://i.pinimg.com/originals/48/54/2a/48542a09930cc42cc33b23085a8f91fc.jpg" alt="text" width="500" height="500">
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Never give up
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <img src="https://www.momswhothink.com/wp-content/uploads/MONROE_QUOTE.jpg" alt="text" width="500" height="500">
+          <img src="https://cdn-media-1.lifehack.org/wp-content/files/2015/09/18110312/Opportunity-does-not-knock-it__quotes-by-Kyle-Chandler-22-e1442589065366.png" alt="text" width="500" height="500">
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Work harder
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>        
+ 
+    <!--background image -->
+   <center>
+     <h1> I have been learning eveything by myself</h1>
+   </center>
+
+  <iframe src="https://html.com" width="100%" height="500"></iframe>
+
+    <p id="demo"></p>
+      <!--use some imojy for fun-->
+          <p>&#128512;&#128151;</p>
+
+           <!--let creat a bootstrap -->
+              <html>
+                <head>
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                </head>
+
+                  </body>
+            </html>
+
+                     <!---bootstrap collapse-->
+                     <head>
+                      <meta name="viewport" content="width=device-width, initial-scale=1">
+                      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                    </head>
+                    <body>
+                    
+                     
+                    <div class="container">
+                      <h2>Don't Lose your time</h2>
+                      <p>Click on the button to toggle between showing and hiding content.</p>
+                      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+                      <div id="demo" class="collapse">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                      </div>
+                      
+            
+                   <!--bootstrap layout Input-->
+                   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+  <h2>Form Validation</h2>
+  <p> we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
+  <p>Try to submit this form before filling out the input fields, to see the effect.</p>
+  <form action="/action_page.php" class="needs-validation" novalidate>
+    <div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+<script>
+  var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+         myObj = JSON.parse(this.responseText);
+          document.getElementById("demo").innerHTML = myObj.name;
+                }
+              };
+              xmlhttp.open("GET", "demo_file.php", true);
+              xmlhttp.send();
+            </script>
+          </body>
+        </html>
+        
