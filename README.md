@@ -22,3 +22,5 @@
  -Get the forms we want to add validation styles 
  
 -Loop over them and prevent submission
+
+-and some pictures
